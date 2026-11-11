@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi Komputasi Awan - Rudini (2353027374)</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <img src="assets/images/banner.jpg" alt="Banner Website Komputasi Awan" class="top-banner">
+
+    <table class="main-layout">
+        <tr>
+            <td colspan="2">
+                <div class="header-bar">Materi Komputasi Awan (Cloud Computing) <span class="version-pill">Versi 1.0</span></div>
+            </td>
+        </tr>
+        <tr>
+            <td class="sidebar-cell">
+                <p class="sidebar-title">Menu Navigasi</p>
+                <ul class="nav-list">
+                    <li><a href="index.html">Beranda &amp; Biodata</a></li>
+                    <li><a href="materi.html" class="active">Materi Komputasi Awan</a></li>
+                    <li><a href="portofolio.html">Portofolio Tugas</a></li>
+                </ul>
+                <a href="index.html" class="back-btn">&larr; KEMBALI</a>
+            </td>
+
+            <td class="content-cell">
+                <h2 class="section-heading" style="margin-top: 0;">1. Pengertian Komputasi Awan (Cloud Computing)</h2>
+                <p>
+                    <span class="dropcap">K</span>omputasi Awan (<i>Cloud Computing</i>) adalah model penyediaan sumber daya komputasi - seperti server, media penyimpanan (<i>storage</i>), basis data, jaringan, hingga perangkat lunak aplikasi - melalui jaringan internet (<i>cloud</i>) secara sesuai permintaan (<i>on-demand</i>). Dengan komputasi awan, pengguna maupun organisasi tidak perlu lagi membeli, merakit, dan memelihara server fisik sendiri di lokasi lokal (<i>on-premise</i>), melainkan cukup mengakses layanan yang dikelola oleh penyedia layanan cloud dari mana saja selama terhubung ke internet.
+                </p>
+                <p>
+                    Dalam konteks publikasi website statis pada tugas ini, <b>GitHub Pages</b> merupakan contoh nyata pemanfaatan infrastruktur cloud hosting: berkas HTML, CSS, dan gambar disimpan di server milik GitHub dan disajikan langsung kepada pengunjung melalui alamat URL publik yang selalu aktif 24 jam sehari tanpa bergantung pada komputer lokal mahasiswa.
+                </p>
+
+                <h2 class="section-heading">2. Tiga Model Layanan Utama: SaaS, PaaS, dan IaaS</h2>
+                <table class="card-row-table">
+                    <tr>
+                        <td class="highlight-card">
+                            <h3>SaaS<br><small>(Software as a Service)</small></h3>
+                            <p>
+                                Layanan perangkat lunak siap pakai yang dijalankan langsung melalui peramban web tanpa instalasi maupun pengelolaan server oleh pengguna. Pengguna hanya menggunakan fitur aplikasi dan mengelola datanya sendiri.
+                            </p>
+                            <p><b>Contoh:</b> Google Drive, Google Docs, Gmail, Microsoft 365, Canva.</p>
+                        </td>
+                        <td class="highlight-card">
+                            <h3>PaaS<br><small>(Platform as a Service)</small></h3>
+                            <p>
+                                Layanan yang menyediakan lingkungan/platform siap pakai bagi pengembang untuk membangun, menguji, dan mempublikasikan (<i>deploy</i>) kode aplikasi tanpa perlu mengonfigurasi sistem operasi atau perangkat keras server.
+                            </p>
+                            <p><b>Contoh:</b> GitHub Pages, Google App Engine, Vercel, Netlify, Heroku.</p>
+                        </td>
+                        <td class="highlight-card">
+                            <h3>IaaS<br><small>(Infrastructure as a Service)</small></h3>
+                            <p>
+                                Layanan penyewaan infrastruktur komputasi dasar berupa mesin virtual (<i>Virtual Machine</i>), kapasitas penyimpanan, dan jaringan. Pengguna memiliki kendali penuh atas sistem operasi dan perangkat lunak yang dipasang.
+                            </p>
+                            <p><b>Contoh:</b> Amazon EC2 (AWS), Google Compute Engine (GCP), DigitalOcean Droplets.</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="data-table">
+                    <tr>
+                        <th style="width: 16%;">Model Layanan</th>
+                        <th style="width: 34%;">Apa yang Dikelola Penyedia Cloud</th>
+                        <th style="width: 25%;">Apa yang Dikelola Pengguna</th>
+                        <th style="width: 25%;">Contoh Penggunaan Nyata</th>
+                    </tr>
+                    <tr>
+                        <td><b>SaaS</b></td>
+                        <td>Seluruh infrastruktur, jaringan, penyimpanan, sistem operasi, <i>runtime</i>, hingga kode aplikasi.</td>
+                        <td>Penggunaan aplikasi dan berkas/data milik pengguna sendiri.</td>
+                        <td>Menyimpan dokumen tugas di <b>Google Drive</b> atau mengedit laporan di <b>Google Docs</b>.</td>
+                    </tr>
+                    <tr>
+                        <td><b>PaaS</b></td>
+                        <td>Server fisik, penyimpanan, jaringan, sistem operasi, serta lingkungan <i>build &amp; hosting</i> otomatis.</td>
+                        <td>Kode sumber aplikasi/website (HTML, CSS, JS) dan konfigurasi repositori.</td>
+                        <td>Mempublikasikan website statis mahasiswa melalui <b>GitHub Pages</b>.</td>
+                    </tr>
+                    <tr>
+                        <td><b>IaaS</b></td>
+                        <td>Pusat data fisik (<i>data center</i>), rak server, jaringan fisik, dan lapisan virtualisasi.</td>
+                        <td>Sistem operasi (Linux/Windows), konfigurasi <i>web server</i> (Nginx/Apache), basis data, dan kode.</td>
+                        <td>Menyewa VPS / Virtual Machine di <b>AWS EC2</b> atau <b>Google Compute Engine</b>.</td>
+                    </tr>
+                </table>
+
+                <h2 class="section-heading">3. Manfaat dan Risiko Penggunaan Layanan Cloud</h2>
+                <table class="data-table">
+                    <tr>
+                        <th style="width: 22%;">Aspek</th>
+                        <th style="width: 39%;">Manfaat Penggunaan Layanan Cloud</th>
+                        <th style="width: 39%;">Risiko &amp; Cara Menguranginya (Mitigasi)</th>
+                    </tr>
+                    <tr>
+                        <td><b>Ketersediaan &amp; Aksesibilitas</b></td>
+                        <td>Website dan data dapat diakses kapan saja (24/7) dari perangkat apa pun melalui URL publik meskipun laptop pemilik dimatikan.</td>
+                        <td><b>Risiko:</b> Ketergantungan pada koneksi internet dan potensi gangguan (<i>downtime</i>) penyedia.<br><b>Mitigasi:</b> Menyimpan salinan cadangan (<i>backup</i> ZIP) di perangkat lokal.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Biaya &amp; Pemeliharaan</b></td>
+                        <td>Menghemat biaya pembelian server fisik dan listrik karena infrastruktur dikelola sepenuhnya oleh penyedia cloud.</td>
+                        <td><b>Risiko:</b> Keterikatan pada satu penyedia layanan (<i>vendor lock-in</i>) atau batasan kuota.<br><b>Mitigasi:</b> Menggunakan format web standar (HTML/CSS) yang mudah dipindahkan.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Kemudahan Deployment &amp; Pembaruan Versi</b></td>
+                        <td>Perubahan kode (seperti pembaruan Versi 1 ke Versi 2) dapat langsung dipublikasikan ulang ke alamat URL yang sama dalam hitungan menit.</td>
+                        <td><b>Risiko:</b> Kesalahan <i>commit</i> yang menimpa tampilan publik secara langsung.<br><b>Mitigasi:</b> Menguji website secara lokal di peramban sebelum mengunggah ke repositori.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Keamanan &amp; Privasi Data Publik</b></td>
+                        <td>Repositori publik memudahkan kolaborasi terbuka dan pemeriksaan hasil tugas oleh dosen tanpa hambatan izin akses.</td>
+                        <td><b>Risiko:</b> Kebocoran data sensitif (kata sandi, <i>API key</i>, nomor identitas/KTP, atau nomor telepon pribadi) karena dapat dilihat siapa saja.<br><b>Mitigasi:</b> Menyensor data kontak sensitif dan tidak pernah mengunggah kredensial rahasia ke repositori publik.</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="footer-bar">
+                by rudini (2353027374)
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

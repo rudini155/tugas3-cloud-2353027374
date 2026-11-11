@@ -1,0 +1,291 @@
+/* =========================================================
+   Berkas Gaya (CSS) - Tugas 3 Komputasi Awan
+   Nama  : Rudini
+   NIM   : 2353027374
+   Versi : Versi 1 (Adaptasi Desain Website UTS Pemrograman Web)
+   ========================================================= */
+
+:root {
+    --bg-main: antiquewhite;
+    --bg-sidebar: burlywood;
+    --bg-header: brown;
+    --text-header: bisque;
+    --bg-footer: chocolate;
+    --text-footer: #fff8dc;
+    --text-primary: #3b1f14;
+    --link-color: brown;
+    --link-hover-bg: brown;
+    --link-hover-text: bisque;
+    --card-bg: burlywood;
+    --card-border: brown;
+    --table-header-bg: brown;
+    --table-header-text: bisque;
+    --table-text: darkred;
+    --badge-bg: #8b4513;
+    --badge-text: #fff8dc;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-main);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-primary);
+    margin: 8px;
+    line-height: 1.6;
+}
+
+.top-banner {
+    width: 100%;
+    height: 125px;
+    object-fit: cover;
+    display: block;
+    border: 2px solid var(--card-border);
+    border-radius: 4px;
+}
+
+.main-layout {
+    width: 100%;
+    min-height: 85vh;
+    border-collapse: collapse;
+    margin-top: 6px;
+}
+
+.header-bar {
+    font-size: 26px;
+    font-weight: bold;
+    background-color: var(--bg-header);
+    color: var(--text-header);
+    text-align: center;
+    padding: 10px 14px;
+    margin: 6px 0;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+}
+
+.version-pill {
+    display: inline-block;
+    background-color: var(--badge-bg);
+    color: var(--badge-text);
+    font-size: 14px;
+    padding: 3px 12px;
+    border-radius: 999px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.sidebar-cell {
+    width: 18%;
+    background-color: var(--bg-sidebar);
+    vertical-align: top;
+    padding: 16px 14px;
+    border: 2px solid var(--card-border);
+}
+
+.sidebar-title {
+    font-weight: bold;
+    color: var(--link-color);
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--card-border);
+}
+
+.nav-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+    color: var(--link-color);
+}
+
+.nav-list li {
+    margin-bottom: 14px;
+}
+
+.nav-list a {
+    color: var(--link-color);
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 4px 6px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.nav-list a:hover,
+.nav-list a.active {
+    background-color: var(--link-hover-bg);
+    color: var(--link-hover-text);
+    text-decoration: none;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 6px 12px;
+    background-color: var(--bg-header);
+    color: var(--text-header);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.content-cell {
+    width: 82%;
+    vertical-align: top;
+    padding: 18px 24px;
+    text-align: justify;
+    border: 2px solid var(--card-border);
+}
+
+.dropcap {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--link-color);
+}
+
+.section-heading {
+    color: var(--link-color);
+    border-bottom: 2px solid var(--card-border);
+    padding-bottom: 4px;
+    margin-top: 22px;
+    margin-bottom: 12px;
+}
+
+/* Tabel Biodata (Adaptasi langsung dari biodata.html UTS) */
+.biodata-box {
+    width: 88%;
+    margin: 18px auto;
+    background-color: var(--card-bg);
+    border: 3px solid var(--card-border);
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.biodata-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.profile-photo {
+    width: 210px;
+    height: 210px;
+    object-fit: cover;
+    border: 3px solid var(--card-border);
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+}
+
+.biodata-list {
+    list-style-type: disc;
+    font-size: 16px;
+    line-height: 1.75;
+    margin: 0;
+    padding-left: 24px;
+}
+
+.social-row {
+    text-align: center;
+    padding-top: 14px;
+}
+
+.social-row a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
+
+/* Kartu 3 Kolom (Adaptasi dari Best Seller produk.html UTS) */
+.card-row-table {
+    width: 100%;
+    margin: 14px auto 22px auto;
+    border-collapse: separate;
+    border-spacing: 14px 0;
+}
+
+.highlight-card {
+    width: 33.3%;
+    padding: 14px;
+    border: 3px solid var(--card-border);
+    background-color: var(--card-bg);
+    border-radius: 6px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.highlight-card h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: var(--link-color);
+    text-align: center;
+    border-bottom: 1px solid var(--card-border);
+    padding-bottom: 6px;
+}
+
+/* Tabel Data (Adaptasi dari tabel produk.html & pegawai.html UTS) */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: var(--table-text);
+    margin: 14px 0 22px 0;
+    background-color: #ffffff;
+}
+
+.data-table th,
+.data-table td {
+    border: 1px solid var(--card-border);
+    padding: 10px 12px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.data-table th {
+    background-color: var(--table-header-bg);
+    color: var(--table-header-text);
+    text-align: center;
+    font-weight: bold;
+}
+
+.info-summary-table {
+    background-color: var(--card-bg);
+    border: 2px solid var(--card-border);
+    padding: 10px 16px;
+    margin: 22px auto 10px auto;
+    border-radius: 6px;
+}
+
+.info-summary-table td {
+    padding: 4px 10px;
+}
+
+.btn-link {
+    display: inline-block;
+    background-color: var(--bg-header);
+    color: var(--text-header);
+    padding: 6px 14px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.btn-link:hover {
+    opacity: 0.9;
+}
+
+.footer-bar {
+    text-align: center;
+    background-color: var(--bg-footer);
+    color: var(--text-footer);
+    padding: 10px;
+    font-weight: bold;
+    border: 2px solid var(--card-border);
+}
