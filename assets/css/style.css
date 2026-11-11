@@ -2,27 +2,27 @@
    Berkas Gaya (CSS) - Tugas 3 Komputasi Awan
    Nama  : Rudini
    NIM   : 2353027374
-   Versi : Versi 1 (Adaptasi Desain Website UTS Pemrograman Web)
+   Versi : Pembaruan Versi 2 (Tema Biru Awan / Cloud Blue)
    ========================================================= */
 
 :root {
-    --bg-main: antiquewhite;
-    --bg-sidebar: burlywood;
-    --bg-header: brown;
-    --text-header: bisque;
-    --bg-footer: chocolate;
-    --text-footer: #fff8dc;
-    --text-primary: #3b1f14;
-    --link-color: brown;
-    --link-hover-bg: brown;
-    --link-hover-text: bisque;
-    --card-bg: burlywood;
-    --card-border: brown;
-    --table-header-bg: brown;
-    --table-header-text: bisque;
-    --table-text: darkred;
-    --badge-bg: #8b4513;
-    --badge-text: #fff8dc;
+    --bg-main: #f0f7ff;
+    --bg-sidebar: #dbeafe;
+    --bg-header: #1e3a8a;
+    --text-header: #ffffff;
+    --bg-footer: #1d4ed8;
+    --text-footer: #ffffff;
+    --text-primary: #0f172a;
+    --link-color: #1e3a8a;
+    --link-hover-bg: #1e3a8a;
+    --link-hover-text: #ffffff;
+    --card-bg: #dbeafe;
+    --card-border: #1e3a8a;
+    --table-header-bg: #1e3a8a;
+    --table-header-text: #ffffff;
+    --table-text: #1e293b;
+    --badge-bg: #d97706;
+    --badge-text: #ffffff;
 }
 
 * {
